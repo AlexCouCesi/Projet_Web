@@ -1,0 +1,57 @@
+/* Définition des styles pour le corps de la page */
+body {
+	background-color: #f3f3f3; /* Couleur de fond gris clair */
+	font-family: "Century Gothic", sans-serif; /* Police de caractères */
+}
+
+/* Définition des styles pour les cellules de tableau */
+td{
+	padding: 20px; /* Espacement des cellules de 20px */
+}
+
+/* Définition des styles pour la barre de navigation */
+.navbar {
+  display: flex; /* Utilisation de flexbox pour la mise en page */
+}
+
+/* Définition des styles pour les liens dans la barre de navigation */
+.navbar a {
+  display: inline-block; /* Affichage en ligne avec bloc */
+  padding: 20px 50px; /* Remplissage des liens */
+  background-color: #d4e3fc; /* Couleur de fond */
+  border: 1px solid black; /* Bordure noire de 1px */
+  text-decoration: none; /* Pas de soulignement par défaut */
+  height: 20px; /* Hauteur de 20px */
+}
+
+/* Styles au survol des liens dans la barre de navigation */
+.navbar a:hover {
+  text-decoration: underline; /* Soulignement au survol */
+}
+
+/* Styles pour le lien actif dans la barre de navigation */
+.navbar a.active {
+  background-color: #a8c6fa; /* Couleur de fond différente pour le lien actif */
+}
+
+/* Styles pour le logo */
+.logo {
+    width: 200px; /* Largeur de 200px */
+    height: auto; /* Hauteur automatique */
+}
+
+/* Styles pour le lien "Mon Compte" */
+.mon_compte {
+    display: inline-block; /* Affichage en ligne avec bloc */
+    padding: 20px 40px; /* Remplissage du lien */
+    background-color: black; /* Couleur de fond noire */
+    color: white; /* Couleur du texte */
+    border-radius: 20px; /* Coins arrondis */
+    text-decoration: none; /* Pas de soulignement par défaut */
+}
+
+/* Styles au survol du lien "Mon Compte" */
+.mon_compte:hover {
+    text-decoration: underline; /* Soulignement au survol */
+    background-color: #333; /* Couleur de fond différente au survol */
+}
