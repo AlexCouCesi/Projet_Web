@@ -1,12 +1,16 @@
 /* Définition des styles pour le corps de la page */
 body {
-	background-color: #f3f3f3; /* Couleur de fond gris clair */
 	font-family: "Century Gothic", sans-serif; /* Police de caractères */
+    background: linear-gradient(to bottom, #ffffff, #3EA9F1);
+    background-size: cover; /* Redimensionne l'image pour remplir toute la fenêtre */
+    background-attachment: fixed; /* Centre l'image dans la fenêtre */
 }
 
-/* Définition des styles pour les cellules de tableau */
-td{
-	padding: 20px; /* Espacement des cellules de 20px */
+.container {
+    display: flex;
+    align-items: center; /* Alignement vertical au centre */
+    justify-content: space-between; /* Répartition équitable des éléments */
+    width: 100%; /* Prend toute la largeur de l'écran */
 }
 
 /* Définition des styles pour la barre de navigation */
@@ -22,6 +26,8 @@ td{
   border: 1px solid black; /* Bordure noire de 1px */
   text-decoration: none; /* Pas de soulignement par défaut */
   height: 20px; /* Hauteur de 20px */
+  width: 100%;
+  text-align: center;
 }
 
 /* Styles au survol des liens dans la barre de navigation */
@@ -38,6 +44,8 @@ td{
 .logo {
     width: 200px; /* Largeur de 200px */
     height: auto; /* Hauteur automatique */
+	display: block; /* Assurez-vous que l'image est affichée en tant que bloc */
+    margin: 0 auto; /* Marge automatique horizontale */
 }
 
 /* Styles pour le lien "Mon Compte" */
@@ -54,4 +62,64 @@ td{
 .mon_compte:hover {
     text-decoration: underline; /* Soulignement au survol */
     background-color: #333; /* Couleur de fond différente au survol */
+}
+
+fieldset {
+	background-color: #f3f3f3; /* Couleur de fond */
+    color: black;
+    font-weight: bold;
+	text-align: center;
+	width: 50%;
+    height: 25%;
+	display: block;
+    margin: 0 auto;
+}
+
+input {
+    background-color: #fff;
+    color: grey;
+    border-color: none;
+    border-radius: 5px;
+    padding: 10px;
+	width: 200px;
+    border: none;
+    outline: none;
+}
+
+/* Styles spécifiques pour le bouton de soumission */
+input[type="submit"]{
+    background-color: black; /* Couleur de fond noir */
+    color: #fff; /* Couleur du texte blanc */
+}
+
+.horizontal {
+    border: none; /* Supprime la bordure par défaut */
+    border-top: 1px solid black; /* Ajoute une bordure supérieure d'une épaisseur de 1 pixel */
+    width: 250px; /* Largeur de la ligne, vous pouvez ajuster cette valeur selon vos besoins */
+}
+
+.link {
+    color: blue; /* Couleur du texte en bleu */
+    text-decoration: none; /* Suppression du soulignement par défaut */
+}
+
+.link:hover {
+    text-decoration: underline; /* Soulignement au survol */
+}
+
+select {
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Coins arrondis */
+    padding: 10px; /* Espacement interne */
+    margin: 5px 0; /* Marge externe */
+    width: 200px; /* Largeur à 100% */
+    box-sizing: border-box; /* La largeur inclut le remplissage et la bordure */
+}
+
+.TextRed{
+	width: 200px;
+	color: red;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 10px;
 }
